@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateContactViewController" customModule="NoiseBot" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="vYc-YT-hou" id="bnB-qO-aWd"/>
+                <outlet property="firstNameField" destination="JOO-bJ-YKF" id="Fjo-fh-0yA"/>
+                <outlet property="lastNameField" destination="Esd-rE-SOh" id="CFz-l0-Krj"/>
+                <outlet property="numberField" destination="wIL-ur-wrM" id="K5e-YV-IIH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vYc-YT-hou">
+                    <rect key="frame" x="0.0" y="167" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YYQ-m0-tEC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JOO-bJ-YKF">
+                    <rect key="frame" x="0.0" y="68" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="1Rh-d6-pwO"/>
+                        <constraint firstAttribute="height" constant="50" id="I4t-MY-f2G"/>
+                        <constraint firstAttribute="height" constant="50" id="bSk-NR-dQl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="done"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1Rh-d6-pwO"/>
+                            <exclude reference="bSk-NR-dQl"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-rE-SOh">
+                    <rect key="frame" x="0.0" y="118" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3RN-P0-aiS"/>
+                        <constraint firstAttribute="width" constant="600" id="Kx8-Zj-3mM"/>
+                        <constraint firstAttribute="height" constant="50" id="y8g-rt-HKk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="done"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3RN-P0-aiS"/>
+                            <exclude reference="Kx8-Zj-3mM"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="center" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-ur-wrM">
+                    <rect key="frame" x="0.0" y="216" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Xhy-Jl-XEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Esd-rE-SOh" secondAttribute="trailing" id="0si-bp-xWd"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="top" secondItem="JOO-bJ-YKF" secondAttribute="bottom" id="3ga-9W-fJ5"/>
+                <constraint firstItem="wIL-ur-wrM" firstAttribute="top" secondItem="vYc-YT-hou" secondAttribute="bottom" constant="-1" id="7dR-dl-IP6"/>
+                <constraint firstItem="JOO-bJ-YKF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="ACw-6E-8yD"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CDQ-sJ-AaI"/>
+                <constraint firstItem="wIL-ur-wrM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CIF-An-EhJ"/>
+                <constraint firstAttribute="trailing" secondItem="vYc-YT-hou" secondAttribute="trailing" id="Cgx-hd-QiU"/>
+                <constraint firstItem="vYc-YT-hou" firstAttribute="top" secondItem="Esd-rE-SOh" secondAttribute="bottom" id="Esi-lg-Nxl"/>
+                <constraint firstAttribute="trailing" secondItem="wIL-ur-wrM" secondAttribute="trailing" id="Hqa-zn-EBe"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="leading" secondItem="JOO-bJ-YKF" secondAttribute="trailing" constant="-600" id="IbP-Rv-UKo"/>
+                <constraint firstItem="JOO-bJ-YKF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JZg-o3-fdM"/>
+                <constraint firstAttribute="trailing" secondItem="JOO-bJ-YKF" secondAttribute="trailing" id="Loi-iy-dcp"/>
+                <constraint firstItem="vYc-YT-hou" firstAttribute="height" secondItem="JOO-bJ-YKF" secondAttribute="height" id="RLg-Tu-OmW"/>
+                <constraint firstItem="JOO-bJ-YKF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="Yfh-eL-CEZ"/>
+                <constraint firstItem="vYc-YT-hou" firstAttribute="top" secondItem="JOO-bJ-YKF" secondAttribute="bottom" constant="69" id="czB-C9-vcV"/>
+                <constraint firstItem="JOO-bJ-YKF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d5k-Rk-JH9"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="height" secondItem="JOO-bJ-YKF" secondAttribute="height" id="eDl-aL-MvS"/>
+                <constraint firstItem="vYc-YT-hou" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ewv-yI-IZc"/>
+                <constraint firstAttribute="trailing" secondItem="Esd-rE-SOh" secondAttribute="trailing" id="hJ5-pa-JvW"/>
+                <constraint firstItem="wIL-ur-wrM" firstAttribute="height" secondItem="JOO-bJ-YKF" secondAttribute="height" id="igv-s2-czM"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="118" id="mU4-A1-Sbp"/>
+                <constraint firstItem="vYc-YT-hou" firstAttribute="top" secondItem="Esd-rE-SOh" secondAttribute="bottom" constant="-1" id="tVc-Ks-bgd"/>
+                <constraint firstItem="Esd-rE-SOh" firstAttribute="leading" secondItem="JOO-bJ-YKF" secondAttribute="trailing" constant="-600" id="uaS-xz-Rw7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Yfh-eL-CEZ"/>
+                    <exclude reference="d5k-Rk-JH9"/>
+                    <exclude reference="IbP-Rv-UKo"/>
+                    <exclude reference="hJ5-pa-JvW"/>
+                    <exclude reference="mU4-A1-Sbp"/>
+                    <exclude reference="uaS-xz-Rw7"/>
+                    <exclude reference="Esi-lg-Nxl"/>
+                    <exclude reference="czB-C9-vcV"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

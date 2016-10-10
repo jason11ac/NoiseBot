@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController" customModule="NoiseBot" customModuleProvider="target">
+            <connections>
+                <outlet property="helpLabel" destination="6bJ-13-dYn" id="W8U-Wp-Hxb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bJ-13-dYn">
+                    <color key="backgroundColor" red="0.63398887169999996" green="0.89275661709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.63398887169999996" green="0.89275661709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6bJ-13-dYn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bmj-sb-YCM"/>
+                <constraint firstItem="6bJ-13-dYn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hpX-UB-GEQ"/>
+                <constraint firstAttribute="trailing" secondItem="6bJ-13-dYn" secondAttribute="trailing" id="lZd-Fn-I9i"/>
+                <constraint firstAttribute="bottom" secondItem="6bJ-13-dYn" secondAttribute="bottom" id="nQ1-kp-Eb9"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="74.5"/>
+        </view>
+    </objects>
+</document>

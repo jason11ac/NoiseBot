@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController" customModule="NoiseBot" customModuleProvider="target">
+            <connections>
+                <outlet property="homeButton" destination="ufe-K2-AlI" id="gjV-Jc-VXu"/>
+                <outlet property="reportButton" destination="tyJ-Uw-Xby" id="JWZ-iC-C8r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufe-K2-AlI">
+                    <rect key="frame" x="8" y="328" width="584" height="230"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                    <state key="normal" title="Back to Home Screen">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyJ-Uw-Xby">
+                    <rect key="frame" x="8" y="76" width="584" height="230"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                    <state key="normal" title="Report Noise Incident">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ufe-K2-AlI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="7PZ-L8-jis"/>
+                <constraint firstItem="ufe-K2-AlI" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="BfI-5T-jsY"/>
+                <constraint firstItem="ufe-K2-AlI" firstAttribute="height" secondItem="tyJ-Uw-Xby" secondAttribute="height" id="GQp-N7-LXu"/>
+                <constraint firstAttribute="bottomMargin" secondItem="ufe-K2-AlI" secondAttribute="bottom" constant="34" id="W77-q2-Ggd"/>
+                <constraint firstAttribute="trailing" secondItem="ufe-K2-AlI" secondAttribute="trailing" constant="8" id="Y4Y-d9-1gq"/>
+                <constraint firstAttribute="trailing" secondItem="tyJ-Uw-Xby" secondAttribute="trailing" constant="8" id="bNH-UQ-u8i"/>
+                <constraint firstItem="tyJ-Uw-Xby" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dlB-yu-cLE"/>
+                <constraint firstItem="ufe-K2-AlI" firstAttribute="top" secondItem="tyJ-Uw-Xby" secondAttribute="bottom" constant="22" id="erI-Gx-PMA"/>
+                <constraint firstItem="ufe-K2-AlI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="lSy-t6-W0i"/>
+                <constraint firstItem="tyJ-Uw-Xby" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="ndF-1m-CcA"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7PZ-L8-jis"/>
+                    <exclude reference="BfI-5T-jsY"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
