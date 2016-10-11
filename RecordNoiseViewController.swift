@@ -470,19 +470,19 @@ class RecordNoiseViewController: UIViewController, AVAudioRecorderDelegate {
     func sendEmailAlert(_ email: String) {
         let name = defaults.string(forKey: defaultGlobalKeys1.keyName)!
         
-        //Create Date
+       //Create Date
         let todaysDate:Date = Date()
         let calendar = Calendar.current
-        var dateCom = (calendar as NSCalendar).components([NSCalendar.Unit.hour], from: todaysDate)
-        if dateCom.hour! > 12 {
-            dateCom.hour = (dateCom.hour! - 12)
-        } else if dateCom.hour == 0 {
-            dateCom.hour = 12
+        var hour = calendar.component(.hour, from: todaysDate)
+        if hour > 12 {
+            hour = (hour - 12)
+        } else if hour == 0 {
+            hour = 12
         }
         //Alert Time
         let dateFormatter:DateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier:"en_US_POSIX")
-        dateFormatter.dateFormat = "\(dateCom.hour):mma"
+        dateFormatter.dateFormat = "\(hour):mma"
         let DateInFormat:String = dateFormatter.string(from: todaysDate)
 
         //Alert Date
